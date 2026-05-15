@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Gemma Vision 2</string>
+    <string name="a11y_service_description">
+        Reads foreground app context to enrich Gemma Vision\'s prompts.
+        Does not drive the UI; cooperates with TalkBack.
+    </string>
+    <string name="a11y_service_summary">Context-aware companion (TalkBack-cooperative)</string>
+
+    <string name="wake_service_notification_title">Gemma Vision listening</string>
+    <string name="wake_service_notification_text">Tap to pause. Say \"Hey Gemma\".</string>
+    <string name="wake_service_channel_name">Always-on listener</string>
+</resources>

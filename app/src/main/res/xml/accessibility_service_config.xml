@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Cooperative accessibility service.
+
+  We READ the foreground app's content tree for prompt-context building only.
+  We never perform AccessibilityActions / drive the UI. TalkBack remains the
+  authoritative screen-reader. Per AGP guidance, we declare flagRequestAccessibilityButton
+  so the user can opt in via the Accessibility menu rather than auto-enable.
+-->
+<accessibility-service xmlns:android="http://schemas.android.com/apk/res/android"
+    android:description="@string/a11y_service_description"
+    android:summary="@string/a11y_service_summary"
+    android:accessibilityEventTypes="typeWindowStateChanged|typeWindowContentChanged"
+    android:accessibilityFlags="flagDefault|flagIncludeNotImportantViews|flagRequestAccessibilityButton"
+    android:accessibilityFeedbackType="feedbackGeneric"
+    android:notificationTimeout="500"
+    android:canRetrieveWindowContent="true" />

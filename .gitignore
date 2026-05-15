@@ -1,0 +1,15 @@
+build/
+.gradle/
+local.properties
+*.iml
+.idea/
+captures/
+.cxx/
+app/src/main/assets/*.litertlm
+app/src/main/assets/*.gguf
+app/src/main/assets/*.onnx
+.DS_Store
+models/
+.kotlin/
+*.apk
+*.aab
